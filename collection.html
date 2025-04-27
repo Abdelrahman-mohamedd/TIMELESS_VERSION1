@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMELSS</title>
+    <link href="collection.css" rel="stylesheet"/>
+    <link href="nav.css" rel="stylesheet"/>
+    <link href="footer.css" rel="stylesheet"/>
+    <link href="dark.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=login" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+      <!-- Navbar -->
+      <header class="h">
+        <div class="c">
+          <h1 class="l">⌚️TIMELSS</h1>
+          <nav class="li">
+            <div class="login">
+              <a href="index.html"><p>Login<a href="index.html"><span class="material-symbols-outlined">login</span></a></p></a>
+              </div>
+            <a href="home.html">Home</a>
+            <a href="collection.html">Collection</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <button id="theme-toggle" class="size">
+              🌙
+            </button>
+          </nav>
+        </div>
+      </header>
+  
+<div class="parent">
+      <section class="basic">
+        <div class="products">
+          <div class="product-card">
+            <img src="Images\img leather.png" class="product-img" />
+            <h4  class="product-title"> <a href="classic.html"> Classic Watches </a> </h4>
+            
+          </div>
+          <div class="product-card">
+            <img src="Images\photo_5787524094592402499_y.jpg" class="product-img" />
+            <h4  class="product-title"> <a href="smart.html"> Smart Watches </a> </h4>
+            
+          </div>
+          <div class="product-card">
+            <img src="Images\img sport .png" class="product-img" />
+            <h4  class="product-title"> <a href="sport.html"> Sport Watches </a> </h4>
+            
+          </div>
+          
+        </div>
+        
+      </section>
+</div>
+<!-- Footer -->
+<footer class="site">
+  <div class="foot">
+    &copy; 2025 TIMELSS. All rights reserved.
+  </div>
+</footer>
+
+
+
+<script>
+  const themeToggle = document.getElementById('theme-toggle');
+  const body = document.body;
+
+
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    themeToggle.textContent = '☀️';
+  }
+
+  themeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+
+    if (body.classList.contains('dark-mode')) {
+      themeToggle.textContent = '☀️';
+      localStorage.setItem('theme', 'dark'); 
+    } else {
+      themeToggle.textContent = '🌙';
+      localStorage.setItem('theme', 'light'); 
+    }
+  });
+</script>
+      
+</body>
+</html>

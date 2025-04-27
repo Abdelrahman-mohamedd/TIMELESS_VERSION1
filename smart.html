@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Watch</title>
+    <link href="smart.css" rel="stylesheet"/>
+    <link href="search.css" rel="stylesheet"/>
+    <link href="nav.css" rel="stylesheet"/>
+    <link href="footer.css" rel="stylesheet"/>
+    <link href="dark.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=login" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+              <!-- Navbar -->
+              <header class="h">
+                <div class="c">
+                  <h1 class="l">⌚️TIMELSS</h1>
+                  <nav class="li">
+                    <div class="login">
+                      <a href="index.html"><p>Login<a href="index.html"><span class="material-symbols-outlined">login</span></a></p></a>
+                      </div>
+                    <a href="home.html">Home</a>
+                    <a href="collection.html">Collection</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <button id="theme-toggle" class="size">
+                      🌙
+                    </button>
+                  </nav>
+                </div>
+              </header>
+              <div class="sea">
+                <input 
+                  type="text" 
+                  id="searchInput" 
+                  placeholder="Search for a watch..." 
+                  class="search-bar"
+                />
+              </div>
+              <div class="parent">
+                <section class="base">
+                  <div class="products">
+                    <div class="product-card">
+                      <img src="Images\photo_5782855143019104336_x.jpg" class="product-img" />
+                      <h4 class="product-title">iPhone </h4>
+                      <p class="product-price">$850</p>
+                      
+                    </div>
+                    <div class="product-card">
+                      <img src="Images\photo_5782855143019104338_x.jpg" class="product-img" />
+                      <h4 class="product-title">Garmin</h4>
+                      <p class="product-price">$700</p>
+                      
+                    </div>
+                    <div class="product-card">
+                      <img src="Images\photo_5782855143019104340_y.jpg" class="product-img" />
+                      <h4 class="product-title"> SAMSUNG</h4>
+                      <p class="product-price">$1000</p>
+                      
+                  </div>
+                  <div class="product-card">
+                    <img src="Images\photo_5782855143019104342_y.jpg" class="product-img" />
+                    <h4 class="product-title">Huawei</h4>
+                    <p class="product-price">$800</p>
+                    
+                  </div>
+                  <div class="product-card">
+                    <img src="Images\photo_5782855143019104356_x.jpg" class="product-img" />
+                    <h4 class="product-title">Apple SILVER</h4>
+                    <p class="product-price">$720</p>
+                    
+                  </div>
+                  <div class="product-card">
+                    <img src="Images\photo_5782855143019104344_x.jpg" class="product-img" />
+                    <h4 class="product-title">FOSSIL</h4>
+                    <p class="product-price">$450</p>
+                    
+                  </div>
+                  <div class="product-card">
+                    <img src="Images\photo_5782855143019104355_x.jpg" class="product-img" />
+                    <h4 class="product-title">Motorola</h4>
+                    <p class="product-price">$680</p>
+                    
+                  </div>
+                  <div class="product-card">
+                    <img src="Images\photo_5782855143019104346_x.jpg" class="product-img" />
+                    <h4 class="product-title">Apple BLUE</h4>
+                    <p class="product-price">$800</p>
+                   
+                  </div>
+                  <div class="product-card">
+                    <img src="Images\photo_5782855143019104339_y.jpg" class="product-img" />
+                    <h4 class="product-title">ONE PLUS</h4>
+                    <p class="product-price">$550</p>
+                    
+                  </div>
+                </section>
+          </div>
+                    <!-- Footer -->
+          <footer class="site">
+            <div class="foot">
+              &copy; 2025 TIMELSS. All rights reserved.
+            </div>
+          </footer>
+
+          <script>
+            const searchInput = document.getElementById('searchInput');
+            const productCards = document.querySelectorAll('.product-card');
+          
+            searchInput.addEventListener('input', function () {
+              const value = this.value.toLowerCase();
+          
+              productCards.forEach(card => {
+                const title = card.querySelector('.product-title').textContent.toLowerCase();
+                if (title.includes(value)) {
+                  card.style.display = 'block';
+                } else {
+                  card.style.display = 'none';
+                }
+              });
+            });
+          </script>
+
+
+
+
+          <script>
+            const themeToggle = document.getElementById('theme-toggle');
+            const body = document.body;
+          
+          
+            if (localStorage.getItem('theme') === 'dark') {
+              body.classList.add('dark-mode');
+              themeToggle.textContent = '☀️';
+            }
+          
+            themeToggle.addEventListener('click', () => {
+              body.classList.toggle('dark-mode');
+          
+              if (body.classList.contains('dark-mode')) {
+                themeToggle.textContent = '☀️';
+                localStorage.setItem('theme', 'dark'); 
+              } else {
+                themeToggle.textContent = '🌙';
+                localStorage.setItem('theme', 'light'); 
+              }
+            });
+          </script>
+</body>
+</html>

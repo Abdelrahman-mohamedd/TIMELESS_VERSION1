@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TIMELSS </title>
+  <link href="nav.css" rel="stylesheet"/>
+  <link href="footer.css" rel="stylesheet"/>
+  <link href="contact.css" rel="stylesheet"/>
+  <link href="dark.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=login" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+     <!-- Navbar -->
+     <header class="h">
+      <div class="c">
+        <h1 class="l">⌚️TIMELSS</h1>
+        <nav class="li">
+          <div class="login">
+            <a href="index.html"><p>Login<a href="index.html"><span class="material-symbols-outlined">login</span></a></p></a>
+            </div>
+          <a href="home.html">Home</a>
+          <a href="collection.html">Collection</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <button id="theme-toggle" class="size">
+            🌙
+          </button>
+        </nav>
+      </div>
+    </header>
+
+  <!-- Contact Section -->
+ 
+  <section id="contact" class="contact-color">
+    <h3 class="heading-style">Contact Us</h3>
+    <form class="centered-element">
+      <div class="form-group">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Send</button>
+    </form>
+    
+  </section>
+  
+  
+
+ <!-- Footer -->
+<footer class="site">
+  <div class="foot">
+    &copy; 2025 TIMELSS. All rights reserved.
+  </div>
+</footer>
+
+
+<script>
+  const themeToggle = document.getElementById('theme-toggle');
+  const body = document.body;
+
+
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    themeToggle.textContent = '☀️';
+  }
+
+  themeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+
+    if (body.classList.contains('dark-mode')) {
+      themeToggle.textContent = '☀️';
+      localStorage.setItem('theme', 'dark'); 
+    } else {
+      themeToggle.textContent = '🌙';
+      localStorage.setItem('theme', 'light'); 
+    }
+  });
+</script>
+
+  <!-- JavaScript
+  <script>
+    document.getElementById("contactLink").addEventListener("click", function (e) {
+      e.preventDefault();
+      const contactSection = document.getElementById("contact");
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  </script> -->
+  
+
+</body>
+</html>

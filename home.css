@@ -1,0 +1,103 @@
+.basic{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.section-video {
+     position: relative;
+     right: -45%;
+     top: 0;
+    bottom: 50%;
+    margin: auto;
+    margin-top: 0; 
+    flex: 1;
+    width: 100%; /* Added to ensure full width for the video section */
+}
+/* Hero Section */
+.b-1 {
+   background-color: #ffffff;
+   padding: 80px 24px;
+ }
+ 
+ .b-2 {
+   display: flex;
+   flex-direction: row;
+   gap: 32px;
+   max-width: 1000px;
+   margin: 50 auto;
+   
+ }
+ 
+ .b-3 {
+   flex: 1;
+   margin: auto;
+   margin-top: 0; 
+}
+.h-two {
+   font-size: 28px;
+   font-weight: bold;
+   margin-bottom: 16px;
+}
+.p-one {
+   color: #4b5563;
+   margin-bottom: 24px;
+   font-size: 20px;
+   font-weight: 500;
+ }
+ .button {
+   background-color: black;
+   color: white;
+   padding: 12px 24px;
+   text-decoration: none;
+   border-radius: 8px;
+   transition: background-color 0.3s;
+ }
+ 
+.button:hover {
+   background-color: #333333;
+ } 
+ /* Featured Watches */
+ .photos {
+   max-width: 1500px;
+   margin: 0 auto;
+   padding: 48px 24px;
+   border-radius: 8px;
+   background-image:linear-gradient(to right,#d4af7f,#7c5d3d,#d4af7f);
+ }
+ 
+ .h-three {
+   text-align: center;
+   font-size: 28px;
+   font-weight: bold;
+   margin-bottom: 48px;
+ }
+ 
+.b-4 {
+   display: grid;
+   gap: 32px;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ }
+ 
+.photo-form {
+   background-color: #ffffff;
+   padding: 10px;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+ }
+ 
+ .photo2 {
+   width: 100%;
+   height: 240px;
+   object-fit: cover;
+   border-radius: 8px;
+ }
+ 
+ .h-four{
+   font-size: 20px;
+   font-weight: bold;
+   margin-top: 48px;
+ }
+ 
+ .price {
+   color: #1f2937;
+ }

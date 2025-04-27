@@ -1,0 +1,42 @@
+.h {
+  background-color: #1e293b; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.c {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.l {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff; 
+}
+
+.li {
+  display: flex;
+  gap: 32px;
+}
+
+.li a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.li a:hover {
+  color: #38bdf8; 
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+

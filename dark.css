@@ -1,0 +1,36 @@
+
+  .dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+
+  .dark-mode header,
+  .dark-mode section,
+  .dark-mode footer,
+  .dark-mode .parent,
+  .dark-mode .photo-form,
+  .dark-mode .product-card{
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+
+  .dark-mode a {
+    color: #ffb300; 
+  }
+
+  .dark-mode .price {
+    color: #ffffff;
+  }
+      
+  
+
+  .dark-mode .bg-white {
+    background-color: #1e1e1e;
+  }
+
+  .dark-mode .text-gray-700 {
+    color: #cbd5e0;
+  }
+.size{
+    font-size: 20px;
+}

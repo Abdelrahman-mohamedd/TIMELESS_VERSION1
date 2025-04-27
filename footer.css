@@ -1,0 +1,16 @@
+.site {
+    background-color: rgb(255, 255, 255);
+    padding: 24px 0;
+    border-top: 1px solid #e5e7eb; 
+    margin-top: 48px;
+  }
+  
+  .foot {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: #4B5563; 
+    font-size: 17px;
+    font-weight: 700;
+  }
+  

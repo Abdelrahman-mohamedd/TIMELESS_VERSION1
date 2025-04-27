@@ -1,0 +1,62 @@
+.zero {
+    max-width: 2000px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    line-height: 2;
+    color: #333;
+    background-color: #d9d0be;
+    
+}
+
+
+.one{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(116, 149, 179);
+}
+
+.first{
+    text-align: center;
+}
+
+
+.two{
+    color: rgb(116, 149, 179);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+.three{
+    color: rgb(116, 149, 179);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+.four{
+    color: rgb(116, 149, 179);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+.five {
+    background-color: white;
+    padding: 24px 0;
+    border-top: 1px solid #e5e7eb; /* نفس لون Tailwind */
+    margin-top: 48px;
+}
+
+.six {
+    max-width: 1200px;
+    margin: 0 auto; /* لتوسيط العنصر أفقياً */
+    text-align: center; /* لتوسيط النص داخل العنصر */
+    color: #4b5563; /* رمادي مثل Tailwind */
+    font-size: 16px;
+}

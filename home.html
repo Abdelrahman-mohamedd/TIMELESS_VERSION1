@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TIMELSS</title>
+  <link href="nav.css" rel="stylesheet"/>
+  <link href="footer.css" rel="stylesheet"/>
+  <link href="dark.css" rel="stylesheet"/>
+  <link href="home.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=login" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+
+
+
+
+
+   
+   <!-- Navbar -->
+   <body class="basic">
+   <header class="h">
+    <div class="c">
+      <h1 class="l">⌚️TIMELSS</h1>
+      <nav class="li">
+        <div class="login">
+          <a href="index.html"><p>Login<a href="index.html"><span class="material-symbols-outlined">login</span></a></p></a>
+          </div>
+        <a href="home.html">Home</a>
+        <a href="collection.html">Collection</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <button id="theme-toggle" class="size">
+          🌙
+        </button>
+      </nav>
+    </div>
+  </header>
+
+ 
+   <!-- Hero Section -->
+   <section class="b-1">
+    <div class="b-2">
+      <div class="b-3">
+        <h2 class="h-two">Discover Timeless Elegance</h2>
+        <p class="p-one">Explore our exclusive collection of luxury and casual watches that suit every style.</p>
+        <a class="button"    href="collection.html">Browse Collection</a>
+      </div>
+      <div class="section-video">
+        <video width="640" height="360" controls>
+          <source src="855017-hd_1920_1080_25fps.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+ 
+  
+
+
+
+  <!-- Featured Watches -->
+  <section class="photos">
+    <h3 class="h-three">Featured Watches</h3>
+    <div class="b-4">
+      <div class="photo-form">
+        <img src="Images\photo_5782855143019104302_x.jpg"  class="photo2"/>
+        <h4 class="h-four">Classic Watch</h4>
+        <p class="price">$750</p>
+      </div>
+      <div class="photo-form">
+        <img src="Images\photo_5782855143019104355_x.jpg" class="photo2"/>
+        <h4 class="h-four">Smart Watch</h4>
+        <p class="price">$680</p>
+      </div>
+      <div class="photo-form">
+        <img src="Images\photo_5785232136834500788_y (1).jpg" class="photo2"/>
+        <h4 class="h-four">Sport Watch</h4>
+        <p class="price">$550</p>
+      </div>
+    </div>
+  </section>
+  
+
+
+<!-- Footer -->
+<footer class="site">
+  <div class="foot">
+    &copy; 2025 TIMELSS. All rights reserved.
+  </div>
+</footer>
+
+
+
+
+<script>
+  const themeToggle = document.getElementById('theme-toggle');
+  const body = document.body;
+
+
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    themeToggle.textContent = '☀️';
+  }
+
+  themeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+
+    if (body.classList.contains('dark-mode')) {
+      themeToggle.textContent = '☀️';
+      localStorage.setItem('theme', 'dark'); 
+    } else {
+      themeToggle.textContent = '🌙';
+      localStorage.setItem('theme', 'light'); 
+    }
+  });
+</script>
+
+
+</body>
+</html>
