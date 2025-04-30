@@ -34,3 +34,18 @@
 .size{
     font-size: 20px;
 }
+  .dark-mode .p-one {
+    color: #ffffff;
+}
+.dark-mode .foot{
+  color: #ffffff;
+}
+.dark-mode .form-group input, .form-group textarea{
+  color: #000000;
+}
+.dark-mode .search-bar{
+  color: #000000;
+}
+.dark-mode .product-title{
+  color: #ffffff;
+}
